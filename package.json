@@ -1,0 +1,17 @@
+{
+  "name": "chess-react-native-kindle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx react-native bundle   --platform android --dev false --entry-file index.js --bundle-output ./build/Chess.app",
+    "run": "npx react-native bundle  --platform android --dev false --entry-file index.js --bundle-output ./build/Chess.app && scp ./build/Chess.app root@192.168.1.21:/mnt/us/documents/Chess.app"
+  },
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.6",
+    "js-chess-engine": "^1.0.2",
+    "react": "17.0.2",
+    "react-native": "0.65.1",
+    "react-native-kindle": "1.0.19"
+  },
+  "private": true
+}
