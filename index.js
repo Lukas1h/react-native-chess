@@ -147,8 +147,8 @@ function ReactNativeFrontEnd() {
         height: '100%',
       }}
       winMgr={{
-        // drawMode: WinMgrDrawMode.NORMAL,        //TODO: Figure out good refresh settings. Untill then, defaults work good.
-        // sensitiveLevel: WinMgrSensitiveLevel.NONE,
+        drawMode: WinMgrDrawMode.NORMAL, //TODO: Figure out good refresh settings. Untill then, defaults work good.
+        sensitiveLevel: -1,
         A: 'mainWindow',
       }}
       testID="demoApp"
